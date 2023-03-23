@@ -10,7 +10,8 @@
 class VehicleCar {
   private val capacity = 50
   var fuel = 50
-// move method used to move the vehicle, when vehicle has sufficient fuel
+
+  // move method used to move the vehicle, when vehicle has sufficient fuel
   def move(): String = {
     if (fuel >= 20) {
       fuel -= 20
@@ -19,7 +20,8 @@ class VehicleCar {
     } else
       s"Not enough fuel to move refuel it current fuel is : $fuel"
   }
-// refuel method is used to check if fuel is less than refuel it and return the remaining fuel
+
+  // refuel method is used to check if fuel is less than refuel it and return the remaining fuel
   def refuel(): Int = {
     if (fuel <= 10) {
       fuel += capacity - fuel
